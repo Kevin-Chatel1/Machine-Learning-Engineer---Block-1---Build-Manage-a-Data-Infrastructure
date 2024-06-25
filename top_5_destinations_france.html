@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ace86e3dbcd0fe83b91cc7f66d489f9c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ace86e3dbcd0fe83b91cc7f66d489f9c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ace86e3dbcd0fe83b91cc7f66d489f9c = L.map(
+                "map_ace86e3dbcd0fe83b91cc7f66d489f9c",
+                {
+                    center: [46.2276, 2.2137],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cc5ecaf43ea030379f75cb3ea0f938eb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cc5ecaf43ea030379f75cb3ea0f938eb.addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var marker_43b4d655d2e4bf847201e7eb81631db1 = L.marker(
+                [43.5298424, 5.4474738],
+                {}
+            ).addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var icon_0027e46256fe197aa669edc8d2c098dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43b4d655d2e4bf847201e7eb81631db1.setIcon(icon_0027e46256fe197aa669edc8d2c098dd);
+        
+    
+        var popup_a35a19feaaca40ca90c9b27359486fca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1479a299919750c88aa79400b296760 = $(`<div id="html_d1479a299919750c88aa79400b296760" style="width: 100.0%; height: 100.0%;">Aix en Provence: Temp 27.064999999999998°C, Precip 0.0mm</div>`)[0];
+                popup_a35a19feaaca40ca90c9b27359486fca.setContent(html_d1479a299919750c88aa79400b296760);
+            
+        
+
+        marker_43b4d655d2e4bf847201e7eb81631db1.bindPopup(popup_a35a19feaaca40ca90c9b27359486fca)
+        ;
+
+        
+    
+    
+            var marker_b65e8ac0d8c43ee20419da68828c8387 = L.marker(
+                [43.9492493, 4.8059012],
+                {}
+            ).addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var icon_b9350e3a1404b353e58915b3f0498de9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b65e8ac0d8c43ee20419da68828c8387.setIcon(icon_b9350e3a1404b353e58915b3f0498de9);
+        
+    
+        var popup_ed7e2487ec2d176a08fca23d4c90fa28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef3f078cd53b4618e17b868e59a58c5b = $(`<div id="html_ef3f078cd53b4618e17b868e59a58c5b" style="width: 100.0%; height: 100.0%;">Avignon: Temp 26.64125°C, Precip 0.27mm</div>`)[0];
+                popup_ed7e2487ec2d176a08fca23d4c90fa28.setContent(html_ef3f078cd53b4618e17b868e59a58c5b);
+            
+        
+
+        marker_b65e8ac0d8c43ee20419da68828c8387.bindPopup(popup_ed7e2487ec2d176a08fca23d4c90fa28)
+        ;
+
+        
+    
+    
+            var marker_590d43a1da8cf7e0710cf42836331658 = L.marker(
+                [43.8374249, 4.3600687],
+                {}
+            ).addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var icon_a7c3ff51e7e74d084f980e0a134fd980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_590d43a1da8cf7e0710cf42836331658.setIcon(icon_a7c3ff51e7e74d084f980e0a134fd980);
+        
+    
+        var popup_6b82347e93c5e36cf954fd9f44446c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9844f6826206a63f8ae4d0b7ffd7e42 = $(`<div id="html_f9844f6826206a63f8ae4d0b7ffd7e42" style="width: 100.0%; height: 100.0%;">Nimes: Temp 26.5675°C, Precip 3.31mm</div>`)[0];
+                popup_6b82347e93c5e36cf954fd9f44446c82.setContent(html_f9844f6826206a63f8ae4d0b7ffd7e42);
+            
+        
+
+        marker_590d43a1da8cf7e0710cf42836331658.bindPopup(popup_6b82347e93c5e36cf954fd9f44446c82)
+        ;
+
+        
+    
+    
+            var marker_ed1a7051539151b9bdb1d03625c7df8d = L.marker(
+                [43.2130358, 2.3491069],
+                {}
+            ).addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var icon_7d3e42b13f57a3afc29d88e382accb5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ed1a7051539151b9bdb1d03625c7df8d.setIcon(icon_7d3e42b13f57a3afc29d88e382accb5a);
+        
+    
+        var popup_779c7ca4e94d4fa57754516cf652ccba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_256454628a3a82d2c86f50de86cab26a = $(`<div id="html_256454628a3a82d2c86f50de86cab26a" style="width: 100.0%; height: 100.0%;">Carcassonne: Temp 25.4725°C, Precip 0.33mm</div>`)[0];
+                popup_779c7ca4e94d4fa57754516cf652ccba.setContent(html_256454628a3a82d2c86f50de86cab26a);
+            
+        
+
+        marker_ed1a7051539151b9bdb1d03625c7df8d.bindPopup(popup_779c7ca4e94d4fa57754516cf652ccba)
+        ;
+
+        
+    
+    
+            var marker_87fdf426f1e199c3162fab54eaffdd54 = L.marker(
+                [44.0121279, 4.4196718],
+                {}
+            ).addTo(map_ace86e3dbcd0fe83b91cc7f66d489f9c);
+        
+    
+            var icon_ff50c0aa6e5b8f03daf82acc2d0149d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_87fdf426f1e199c3162fab54eaffdd54.setIcon(icon_ff50c0aa6e5b8f03daf82acc2d0149d7);
+        
+    
+        var popup_3e0604769c664a0beba22badecc1cb7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5ba50198ad93cee6a8782b7b498d93b = $(`<div id="html_b5ba50198ad93cee6a8782b7b498d93b" style="width: 100.0%; height: 100.0%;">Uzes: Temp 25.2375°C, Precip 5.930000000000001mm</div>`)[0];
+                popup_3e0604769c664a0beba22badecc1cb7a.setContent(html_b5ba50198ad93cee6a8782b7b498d93b);
+            
+        
+
+        marker_87fdf426f1e199c3162fab54eaffdd54.bindPopup(popup_3e0604769c664a0beba22badecc1cb7a)
+        ;
+
+        
+    
+</script>
+</html>
